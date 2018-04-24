@@ -9,7 +9,7 @@ const Image = styled.Image`
   height: 40px;
 `;
 
-const Container = styled.View`
+const Container = styled.TouchableOpacity`
   display: flex;
   margin-top: 30px;
   padding: 0px 10px 20px 10px;
@@ -72,9 +72,10 @@ export default ({
   price_usd,
   percent_change_24h,
   name,
-  percent_change_7d
+  percent_change_7d,
+  selectItemHandler
 }) => (
-  <Container>
+  <Container onPress={() => selectItemHandler(symbol)}>
     <Wrapper1>
       <ImageWrapper>
         <Image source={{ uri: url[symbol] }} />
