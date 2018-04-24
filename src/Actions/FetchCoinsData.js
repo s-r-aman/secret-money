@@ -9,7 +9,7 @@ import {
 export default () => dispatch => {
   dispatch({ type: FETCHING_COIN_DATA });
   return axios
-    .get(`${BASE_URL}/v1/ticker/?limit=10`)
+    .get(`${BASE_URL}/v1/ticker/?limit=10&convert=INR`)
     .then(res => {
       dispatch({ type: FETCHING_COIN_DATA_SUCCESS, payload: res.data });
     })
