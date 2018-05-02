@@ -1,7 +1,7 @@
 import React from 'react';
 
 //  Styled Components
-import { View, Text } from './Styles';
+import { View, Text, Line } from './Styles';
 
 export default ({ btc, inr, usd }) => (
   <View>
@@ -17,5 +17,6 @@ export default ({ btc, inr, usd }) => (
     <Text col="#9A9A9A" mar="0px 0px 30px 0px" center fs="25px">
       {Number(Math.round(usd + 'e2') + 'e-2')} USD
     </Text>
+    <Line />
   </View>
 );
