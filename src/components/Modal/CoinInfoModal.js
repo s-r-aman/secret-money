@@ -7,6 +7,7 @@ import { Name } from './Styles';
 
 //  Components
 import Hero from './Hero';
+import Price from './Price';
 
 const View = styled.View``;
 const Text = styled.Text``;
@@ -34,14 +35,12 @@ export default ({
   >
     <View>
       <Hero name={name} rank={rank} symbol={symbol} uri={uri} />
+      <Price btc={price_btc} usd={price_usd} inr={price_inr} />
       <Text>{last_updated}</Text>
       <Text>{max_supply}</Text>
       <Text>{percent_change_1h}</Text>
       <Text>{percent_change_24h}</Text>
       <Text>{percent_change_7d}</Text>
-      <Text>{price_btc}</Text>
-      <Text>{price_usd}</Text>
-      <Text>{price_inr}</Text>
       <Text>{symbol}</Text>
     </View>
   </Modal>
