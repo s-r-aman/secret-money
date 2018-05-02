@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import { Modal } from 'react-native';
+import { Modal, ScrollView } from 'react-native';
 
 //  Styled Components
 import { Name } from './Styles';
@@ -8,9 +8,7 @@ import { Name } from './Styles';
 //  Components
 import Hero from './Hero';
 import Price from './Price';
-
-const View = styled.View``;
-const Text = styled.Text``;
+import PriceChange from './PriceChange';
 
 export default ({
   name,
@@ -33,15 +31,14 @@ export default ({
     onRequestClose={onRequestClose}
     animationType="slide"
   >
-    <View>
+    <ScrollView>
       <Hero name={name} rank={rank} symbol={symbol} uri={uri} />
       <Price btc={price_btc} usd={price_usd} inr={price_inr} />
-      <Text>{last_updated}</Text>
-      <Text>{max_supply}</Text>
-      <Text>{percent_change_1h}</Text>
-      <Text>{percent_change_24h}</Text>
-      <Text>{percent_change_7d}</Text>
-      <Text>{symbol}</Text>
-    </View>
+      <PriceChange
+        h1={percent_change_1h}
+        h24={percent_change_24h}
+        d7={percent_change_7d}
+      />
+    </ScrollView>
   </Modal>
 );
