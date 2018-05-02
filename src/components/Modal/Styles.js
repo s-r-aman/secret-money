@@ -29,4 +29,11 @@ const Text = styled.Text`
   padding: ${({ pad = 0 }) => pad};
 `;
 
-export { Name, View, Image, Flex, Text };
+const Line = styled.View`
+  height: ${({ h = '1px' }) => h};
+  width: ${({ w = '33%' }) => w};
+  margin: ${({ mar = '0 auto' }) => mar};
+  background: ${({ bg = '#efefef' }) => bg};
+`;
+
+export { Name, View, Image, Flex, Text, Line };
