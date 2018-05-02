@@ -27,6 +27,7 @@ const Text = styled.Text`
   color: ${({ col = 'black' }) => col};
   margin: ${({ mar = 0 }) => mar};
   padding: ${({ pad = 0 }) => pad};
+  text-align: ${({ center }) => (center ? 'center' : 'left')};
 `;
 
 const Line = styled.View`
