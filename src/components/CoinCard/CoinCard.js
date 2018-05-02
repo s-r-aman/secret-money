@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-//  Importing images link
-import url from './../../utils/coinImagesLinks';
-
 const Image = styled.Image`
   width: 40px;
   height: 40px;
@@ -73,12 +70,13 @@ export default ({
   percent_change_24h,
   name,
   percent_change_7d,
-  selectItemHandler
+  selectItemHandler,
+  uri
 }) => (
   <Container onPress={() => selectItemHandler(symbol)}>
     <Wrapper1>
       <ImageWrapper>
-        <Image source={{ uri: url[symbol] }} />
+        <Image source={{ uri }} />
       </ImageWrapper>
       <Wrapper4>
         <Wrapper3>

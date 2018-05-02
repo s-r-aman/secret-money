@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import styled from 'styled-components/native';
 import { ActivityIndicator } from 'react-native';
 import Modal from './../Modal/CoinInfoModal';
+import uri from './../../utils/coinImagesLinks';
 
 //  Actions
 import fetchCoinData from './../../Actions/FetchCoinsData';
@@ -30,7 +31,8 @@ class CryptoContainer extends Component {
     this.state = {
       selectedItemSymbol: null,
       itemContent: {},
-      modalVisibility: false
+      modalVisibility: false,
+      uri: uri
     };
   }
 
@@ -68,10 +70,12 @@ class CryptoContainer extends Component {
               {...this.state.itemContent}
               modalVisibility={this.state.modalVisibility}
               onRequestClose={this.deselectItemHandler}
+              uri={this.state.uri[this.state.itemContent.symbol]}
             />
             {crypto.data.map(coinData => (
               <CoinCard
                 key={coinData.symbol}
+                uri={this.state.uri[coinData.symbol]}
                 {...coinData}
                 selectItemHandler={this.selectItemHanlder}
               />
