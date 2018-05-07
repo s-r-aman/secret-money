@@ -1,0 +1,3 @@
+rootProject.name = 'secretmoney'
+
+include ':app'
