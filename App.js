@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/native';
 import { Provider } from 'react-redux';
+import SplashScreen from 'react-native-splash-screen';
 
 //  Components
 import Header from './src/components/Header/Header';
@@ -14,6 +15,9 @@ const View = styled.View`
 `;
 
 export default class App extends React.Component {
+  componentDidMount() {
+    SplashScreen.hide();
+  }
   render() {
     return (
       <Provider store={Store}>
