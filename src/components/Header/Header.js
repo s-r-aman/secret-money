@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import { StyleSheet } from 'react-native';
 
 const Head = styled.View`
-  padding-top: 30px;
+  padding-top: 5px;
   padding-bottom: 10px;
   background-color: #fff;
   elevation: 3;
