@@ -4,9 +4,9 @@ A crypto 💵 tracker app. 💥 [Download](https://github.com/s-r-aman/secret-mo
 
 This is my first react native project🤟🤟.
 
-![home-screenshot](https://github.com/s-r-aman/secret-money/raw/master/screenshots/Screenshot_20180510-225844.png)
+![<img src="https://github.com/s-r-aman/secret-money/raw/master/screenshots/Screenshot_20180510-225844.png" width="300" height="auto"/>](https://github.com/s-r-aman/secret-money/raw/master/screenshots/Screenshot_20180510-225844.png)
 
-![page-screenshot](https://github.com/s-r-aman/secret-money/raw/master/screenshots/Screenshot_20180510-225850.png)
+![<img src="https://github.com/s-r-aman/secret-money/raw/master/screenshots/Screenshot_20180510-225850.png" width="300" height="auto"/>](https://github.com/s-r-aman/secret-money/raw/master/screenshots/Screenshot_20180510-225850.png)
 
 I made this app through this incredible article by [Indrek Lasn](https://medium.com/@wesharehoodies) 🙏 on [Medium](https://medium.com/)-
 
